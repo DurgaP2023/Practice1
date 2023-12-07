@@ -1,0 +1,30 @@
+docker run -it -p 8132:80 --name webapp ubuntu /bin/bash   #this will create a container with port 8132 exposed with port 80 of the container and you will enter inside container
+
+
+   > apt update -y
+   > apt install apache2 -y
+   > service apache2 start
+   > cd /var/www/html
+   > rm index.html  
+   > apt install vim -y
+   > vi index.html 
+        hello world
+   
+
+open the public ip of the machien ...public ip:8132   (ensure that you enable port 8132 in firewall of the machine) 
+
+
+### #  launch a website from git
+
+docker run -it -p 8000:80 --name webapp ubuntu /bin/bash   #this will create a container with port 8132 exposed with port 80 of the container and you will enter inside container
+
+
+   > apt update -y
+   > apt install apache2 -y
+   > service apache2 start
+   > apt install git -y
+   > rm -rf /var/www/html
+   > git clone https://github.com/akshu20791/apachewebsite /var/www/html 
+
+
+open the public ip of the machien ...public ip:8000   (ensure that you enable port 8000 in firewall of the machine) 
