@@ -1,8 +1,0 @@
-|my-demo-repo
- |-- appspec.yml
- |-- index.html
- |-- LICENSE.txt
- `-- scripts
- |-- install_dependencies
- |-- start_server
- `-- stop_server
